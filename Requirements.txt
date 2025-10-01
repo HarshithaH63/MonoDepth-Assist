@@ -1,0 +1,11 @@
+torch==2.0.1
+torchvision==0.15.2
+ultralytics==8.0.200
+opencv-python==4.8.1.78
+matplotlib==3.8.0
+numpy==1.24.3
+pandas==2.1.1
+scikit-image==0.21.0
+tqdm==4.66.1
+notebook==7.0.6
+git+https://github.com/isl-org/Depth-Anything.git
