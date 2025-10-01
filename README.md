@@ -99,7 +99,7 @@ Annotated images include:
 |---------------------|-----------------------------------------------------------------------------|
 | YOLO weights        | [yolov8n.pt](https://github.com/ultralytics/ultralytics/releases), [yolov8s.pt](https://github.com/ultralytics/ultralytics/releases), [yolov8m.pt](https://github.com/ultralytics/ultralytics/releases), [yolov8l.pt](https://github.com/ultralytics/ultralytics/releases) (choose size/accuracy trade-off) |
 | Depth model         | `"depth-anything/Depth-Anything-V2-small-hf"` ([Hugging Face link](https://huggingface.co/spaces/DepthAnything/Depth-Anything)) – larger models available for higher quality |
-| Output directory    | Change `OUT_DIR` in the script to save results elsewhere                    |
+                 
 
 ---
 
@@ -116,3 +116,4 @@ Annotated images include:
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) – Real-time object detection  
 - [Depth-Anything](https://huggingface.co/spaces/DepthAnything/Depth-Anything) – Monocular depth estimation  
 - [Cityscapes Dataset](https://www.cityscapes-dataset.com/) – Urban street scenes for evaluation
+
