@@ -77,19 +77,29 @@ MonoDepth-Assist.ipynb
 
 ---
 
-## Example Output
+## Example Detection Result
 
-| Class   | Confidence | Rel. Depth | Est. Distance (m) | Direction |
-|--------|------------|------------|------------------|-----------|
-| car    | 0.95       | 0.32       | 35.1             | Center    |
-| person | 0.87       | 0.45       | 29.4             | Left      |
+Detected objects in `frankfurt_000000_005898_leftImg8bit.png`:
 
-Annotated images include:
+| Class       | Relative Distance | Direction | Absolute Depth Error (m) | Relative Depth Error |
+|------------|-----------------|-----------|-------------------------|--------------------|
+| car        | 0.515           | Center    | 8.57                    | 0.94               |
+| car        | 0.487           | Center    | 15.19                   | 0.97               |
+| car        | 0.496           | Left      | 30.22                   | 0.98               |
+| motorcycle | 0.553           | Left      | 13.41                   | 0.96               |
+| person     | 0.459           | Left      | 24.77                   | 0.98               |
+| person     | 0.548           | Left      | 18.37                   | 0.97               |
+| truck      | 0.358           | Center    | 22.92                   | 0.98               |
 
-- Bounding boxes  
-- Relative depth and estimated distance labels  
-- Left / Center / Right direction markers  
-- Absolute and relative depth errors (optional)
+**Notes:**
+
+- Relative distance is normalized between 0 (near) and 1 (far).  
+- Absolute depth error indicates deviation from the estimated real-world distance (in meters).  
+- Relative depth error shows proportionate discrepancy within the bounding box depth estimate.  
+- Direction (Left/Center/Right) is computed from the bounding box center relative to the image width.  
+
+This table illustrates how MonoDepth-Assist can provide **per-object spatial cues** useful for assistive navigation.
+
 
 ---
 
@@ -116,4 +126,5 @@ Annotated images include:
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) – Real-time object detection  
 - [Depth-Anything](https://huggingface.co/spaces/DepthAnything/Depth-Anything) – Monocular depth estimation  
 - [Cityscapes Dataset](https://www.cityscapes-dataset.com/) – Urban street scenes for evaluation
+
 
